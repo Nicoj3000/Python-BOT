@@ -3,86 +3,237 @@
         {
             "tag": "saludo",
             "patterns": ["Hola", "Que tal", "Buenos dias", "Buenas tardes", "Buenas noches"],
-            "responses": ["Hola", "¡Hola! ¿En que puedo ayudarte?", "¡Hola! ¿Como estas?"],
+            "responses": ["Hola soy tu asistente virtual, ¿En que puedo ayudarte?"],
             "context": ["saludo"]
         },
         {
             "tag": "despedida",
             "patterns": ["Adios", "Hasta luego", "Hasta pronto", "Nos vemos"],
-            "responses": ["¡Hasta luego!", "¡Adios!", "¡Nos vemos!"],
+            "responses": ["Ha sido un placer ayudarte, ¡Hasta la próxima!"],
             "context": ["despedida"]
         },
         {
             "tag": "agradecimiento",
             "patterns": ["Gracias", "Muchas gracias", "Te agradezco"],
-            "responses": ["¡De nada!", "¡No hay de que!", "¡Estoy para ayudarte!"],
+            "responses": ["¡Estoy para ayudarte!"],
             "context": ["agradecimiento"]
         },
         {
             "tag": "ayuda",
             "patterns": ["¿Puedes ayudarme?", "Necesito ayuda", "¿Me puedes ayudar?"],
-            "responses": ["¡Claro! ¿En que puedo ayudarte?", "¡Por supuesto! ¿Que necesitas?"],
+            "responses": ["¡Claro! ¿En que puedo ayudarte?"],
             "context": ["ayuda"]
         },
+        
         {
-            "tag": "informacion",
-            "patterns": ["¿Quien eres?", "¿Que eres?", "¿Que haces?", "¿Como te llamas?"],
-            "responses": ["Soy un asistente virtual creado para ayudarte a gestionar tus tareas.", "Soy un asistente virtual diseñado para ayudarte a organizar tus tareas."],
-            "context": ["informacion"]
-        },
-        {
-            "tag": "importancia_pagina",
-            "patterns": ["¿Por que es importante esta pagina?", "¿Cual es la importancia de esta pagina?", "¿Por que deberia usar esta pagina?"],
-            "responses": ["Esta pagina es importante porque te ayuda a organizar tus tareas de manera eficiente.", "Usar esta pagina te permite gestionar tus tareas y mejorar tu productividad."],
-            "context": ["importancia_pagina"]
+            "tag": "importanciapagina",
+            "patterns": [
+                "¿Qué es esta página?",
+                "que es la pagina",
+                "ayuda",
+                "¿Cuál es la importancia de esta página?",
+                "¿Por qué debería usar esta página?"
+            ],
+            "responses": [
+                "Esta página es importante porque te ayuda a organizar tus tareas de manera eficiente."
+            ]
         },
         {
             "tag": "funcionalidades",
-            "patterns": ["¿Que funcionalidades ofrece esta pagina?", "¿Que puedo hacer en esta pagina?", "¿Cuales son las caracteristicas de esta pagina?"],
-            "responses": ["Esta pagina ofrece funcionalidades como crear, editar y eliminar tareas, establecer recordatorios y categorizar tareas.", "Puedes gestionar tus tareas, establecer prioridades y recibir notificaciones de recordatorios."],
-            "context": ["funcionalidades"]
+            "patterns": [
+                "¿Qué funcionalidades ofrece esta página?",
+                "¿Qué puedo hacer en esta página?",
+                "¿Cuáles son las características de esta página?",
+                "para que sirve la pagina",
+                "¿Qué servicios ofrece esta página?",
+                "¿Qué beneficios tiene esta página?",
+                "como funciona la pagina"
+            ],
+            "responses": [
+                "Esta página ofrece funcionalidades como crear, editar y eliminar tareas, establecer recordatorios y categorizar tareas."
+            ]
         },
-        {
-            "tag": "registro",
-            "patterns": ["¿Como me registro en la pagina?", "¿Que debo hacer para registrarme?", "¿Como puedo crear una cuenta?"],
-            "responses": ["Para registrarte, haz clic en el boton de registro y sigue las instrucciones.", "Puedes crear una cuenta proporcionando tu correo electronico y una contraseña."],
-            "context": ["registro"]
-        },
-        {
-            "tag": "recuperar_contraseña",
-            "patterns": ["¿Como recupero mi contraseña?", "¿Que hago si olvide mi contraseña?", "¿Como puedo restablecer mi contraseña?"],
-            "responses": ["Para recuperar tu contraseña, haz clic en 'Olvide mi contraseña' y sigue las instrucciones.", "Puedes restablecer tu contraseña proporcionando tu correo electronico."],
-            "context": ["recuperar_contraseña"]
-        },
+        
         {
             "tag": "crear_tarea",
-            "patterns": ["¿Como creo una tarea?", "¿Que debo hacer para agregar una tarea?", "¿Como puedo añadir una tarea?"],
-            "responses": ["Para crear una tarea, haz clic en 'Agregar tarea' y completa los campos requeridos.", "Puedes añadir una tarea proporcionando un titulo, una descripcion y una fecha de vencimiento."],
-            "context": ["crear_tarea"]
+            "patterns": [
+                "¿Cómo creo una tarea?",
+                "¿Qué debo hacer para agregar una tarea?",
+                "¿Cómo puedo añadir una tarea?"
+            ],
+            "responses": [
+                "Para crear una tarea, haz clic en 'Agregar tarea' y completa los campos requeridos.",
+                "Puedes añadir una tarea proporcionando un título, una descripción y una fecha de vencimiento."
+            ]
         },
         {
             "tag": "editar_tarea",
-            "patterns": ["¿Como edito una tarea?", "¿Que debo hacer para modificar una tarea?", "¿Como puedo cambiar una tarea?"],
-            "responses": ["Para editar una tarea, haz clic en 'Editar tarea' y modifica los campos que desees cambiar.", "Puedes modificar una tarea cambiando el titulo, la descripcion o la fecha de vencimiento."],
-            "context": ["editar_tarea"]
+            "patterns": [
+                "¿Cómo edito una tarea?",
+                "¿Qué debo hacer para modificar una tarea?",
+                "¿Cómo puedo cambiar una tarea?"
+            ],
+            "responses": [
+                "Para editar una tarea, haz clic en 'Editar tarea' y modifica los campos que desees cambiar.",
+                "Puedes modificar una tarea cambiando el título, la descripción o la fecha de vencimiento."
+            ]
         },
         {
             "tag": "eliminar_tarea",
-            "patterns": ["¿Como elimino una tarea?", "¿Que debo hacer para borrar una tarea?", "¿Como puedo quitar una tarea?"],
-            "responses": ["Para eliminar una tarea, haz clic en 'Eliminar tarea' y confirma la accion.", "Puedes borrar una tarea seleccionandola y haciendo clic en 'Eliminar'."],
-            "context": ["eliminar_tarea"]
+            "patterns": [
+                "¿Cómo elimino una tarea?",
+                "¿Qué debo hacer para borrar una tarea?",
+                "¿Cómo puedo quitar una tarea?"
+            ],
+            "responses": [
+                "Para eliminar una tarea, haz clic en 'Eliminar tarea' y confirma la acción.",
+                "Puedes borrar una tarea seleccionándola y haciendo clic en 'Eliminar'."
+            ]
         },
         {
             "tag": "prioridad_tarea",
-            "patterns": ["¿Como establezco la prioridad de una tarea?", "¿Que debo hacer para asignar una prioridad a una tarea?", "¿Como puedo marcar una tarea como prioritaria?"],
-            "responses": ["Para establecer la prioridad de una tarea, selecciona la tarea y elige la prioridad deseada.", "Puedes asignar una prioridad a una tarea seleccionandola y marcando la opcion correspondiente."],
-            "context": ["prioridad_tarea"]
+            "patterns": [
+                "¿Cómo establezco la prioridad de una tarea?",
+                "¿Qué debo hacer para asignar una prioridad a una tarea?",
+                "¿Cómo puedo marcar una tarea como prioritaria?"
+            ],
+            "responses": [
+                "Para establecer la prioridad de una tarea, selecciona la tarea y elige la prioridad deseada.",
+                "Puedes asignar una prioridad a una tarea seleccionándola y marcando la opción correspondiente."
+            ]
         },
         {
             "tag": "recordatorio_tarea",
-            "patterns": ["¿Como configuro un recordatorio para una tarea?", "¿Que debo hacer para recibir un recordatorio de una tarea?", "¿Como puedo programar una notificacion para una tarea?"],
-            "responses": ["Para configurar un recordatorio, selecciona la tarea y elige la fecha y hora del recordatorio.", "Puedes programar un recordatorio para una tarea seleccionandola y estableciendo la fecha y hora deseada."],
-            "context": ["recordatorio_tarea"]
+            "patterns": [
+                "¿Cómo configuro un recordatorio para una tarea?",
+                "¿Qué debo hacer para recibir un recordatorio de una tarea?",
+                "¿Cómo puedo programar una notificación para una tarea?"
+        
+            ],
+            "responses": [
+                "Para configurar un recordatorio, selecciona la tarea y elige la fecha y hora del recordatorio.",
+                "Puedes programar un recordatorio para una tarea seleccionándola y estableciendo la fecha y hora deseada."
+            ]
+        },
+        {
+            "tag": "crear_tarea",
+            "patterns": [
+                "¿Cómo creo una tarea?",
+                "¿Qué debo hacer para agregar una tarea?",
+                "¿Cómo puedo añadir una tarea?"
+            ],
+            "responses": [
+                "Para crear una tarea, haz clic en 'Agregar tarea' y completa los campos requeridos.",
+                "Puedes añadir una tarea proporcionando un título, una descripción y una fecha de vencimiento."
+            ]
+        },
+        {
+            "tag": "editar_tarea",
+            "patterns": [
+                "¿Cómo edito una tarea?",
+                "¿Qué debo hacer para modificar una tarea?",
+                "¿Cómo puedo cambiar una tarea?"
+            ],
+            "responses": [
+                "Para editar una tarea, haz clic en 'Editar tarea' y modifica los campos que desees cambiar.",
+                "Puedes modificar una tarea cambiando el título, la descripción o la fecha de vencimiento."
+            ]
+        },
+        {
+            "tag": "eliminar_tarea",
+            "patterns": [
+                "¿Cómo elimino una tarea?",
+                "¿Qué debo hacer para borrar una tarea?",
+                "¿Cómo puedo quitar una tarea?"
+            ],
+            "responses": [
+                "Para eliminar una tarea, haz clic en 'Eliminar tarea' y confirma la acción.",
+                "Puedes borrar una tarea seleccionándola y haciendo clic en 'Eliminar'."
+            ]
+        },
+        {
+            "tag": "prioridad_tarea",
+            "patterns": [
+                "¿Cómo establezco la prioridad de una tarea?",
+                "¿Qué debo hacer para asignar una prioridad a una tarea?",
+                "¿Cómo puedo marcar una tarea como prioritaria?"
+            ],
+            "responses": [
+                "Para establecer la prioridad de una tarea, selecciona la tarea y elige la prioridad deseada.",
+                "Puedes asignar una prioridad a una tarea seleccionándola y marcando la opción correspondiente."
+            ]
+        },
+        {
+            "tag": "recordatorio_tarea",
+            "patterns": [
+                "¿Cómo configuro un recordatorio para una tarea?",
+                "¿Qué debo hacer para recibir un recordatorio de una tarea?",
+                "¿Cómo puedo programar una notificación para una tarea?"
+            ],
+            "responses": [
+                "Para configurar un recordatorio, selecciona la tarea y elige la fecha y hora del recordatorio.",
+                "Puedes programar un recordatorio para una tarea seleccionándola y estableciendo la fecha y hora deseada."
+            ]
+        },
+        {
+            "tag": "categorias_tarea",
+            "patterns": [
+                "¿Cómo puedo categorizar una tarea?",
+                "¿Qué debo hacer para asignar una categoría a una tarea?",
+                "¿Cómo puedo organizar las tareas por categorías?"
+            ],
+            "responses": [
+                "Para categorizar una tarea, selecciona la tarea y elige la categoría deseada.",
+                "Puedes asignar una categoría a una tarea seleccionándola y marcando la opción correspondiente."
+            ]
+        },
+        {
+            "tag": "buscar_tarea",
+            "patterns": [
+                "¿Cómo puedo buscar una tarea?",
+                "¿Qué debo hacer para encontrar una tarea específica?",
+                "¿Cómo puedo buscar tareas por nombre?"
+            ],
+            "responses": [
+                "Para buscar una tarea, utiliza la barra de búsqueda e ingresa el nombre de la tarea que deseas encontrar.",
+                "Puedes encontrar una tarea específica buscándola por nombre en la barra de búsqueda."
+            ]
+        },
+        {
+            "tag": "compartir_tarea",
+            "patterns": [
+                "¿Cómo puedo compartir una tarea con otros usuarios?",
+                "¿Qué debo hacer para enviar una tarea a alguien más?",
+                "¿Cómo puedo colaborar en tareas con otros usuarios?"
+            ],
+            "responses": [
+                "Para compartir una tarea, selecciona la tarea y elige la opción de compartir con otros usuarios.",
+                "Puedes enviar una tarea a otros usuarios seleccionándola y marcando la opción de compartir."
+            ]
+        },
+        {
+            "tag": "notificaciones",
+            "patterns": [
+                "¿Cómo puedo recibir notificaciones de mis tareas?",
+                "¿Qué debo hacer para activar las notificaciones?",
+                "¿Cómo puedo configurar las notificaciones de la página?"
+            ],
+            "responses": [
+                "Para recibir notificaciones de tus tareas, activa las notificaciones en la configuración de la página.",
+                "Puedes configurar las notificaciones de la página para recibir alertas de tus tareas."
+            ]
+        },
+        {
+            "tag": "recordatorio_tarea",
+            "patterns": [
+                "¿Cómo configuro un recordatorio para una tarea?",
+                "¿Qué debo hacer para recibir un recordatorio de una tarea?",
+                "¿Cómo puedo programar una notificación para una tarea?"
+            ],
+            "responses": [
+                "Para configurar un recordatorio, selecciona la tarea y elige la fecha y hora del recordatorio.",
+                "Puedes programar un recordatorio para una tarea seleccionándola y estableciendo la fecha y hora deseada."
+            ]
         }
     ]
 }
